@@ -19,7 +19,7 @@ The goal of this project was to build a sleek, modern, and robust task dashboard
 
 ---
 
-## 🌟 Extra Added Features (Bonus Polish)
+##  Extra Added Features (Bonus Polish)
 
 * **Glassmorphism UI Accents:** Modern frosted-glass headers, smooth transitions, and custom status badges.
 * **Robust Input Validation:** Dual-layer validation (both client-side modal checks and backend service safeguards) ensuring no blank or malformed tasks slip through.
@@ -30,7 +30,7 @@ The goal of this project was to build a sleek, modern, and robust task dashboard
 
 ---
 
-## 📂 Project Directory Structure
+##  Project Directory Structure
 
 ```text
 taskManagementSystem/
@@ -56,7 +56,7 @@ taskManagementSystem/
 ```
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Frontend:** React, Vite, Tailwind CSS, Lucide React Icons
 * **Backend:** Node.js, Express.js (RESTful API architecture)
@@ -64,7 +64,7 @@ taskManagementSystem/
 
 ---
 
-## ⚙️ Setup & Installation Instructions
+##  Setup & Installation Instructions
 
 To run this project locally, make sure you have **Node.js (v18 or higher)** installed on your machine.
 
@@ -138,7 +138,7 @@ Vite will launch your application live at `http://localhost:5173`. Open this URL
 
 ---
 
-## 🔌 API Documentation Summary
+##  API Documentation Summary
 
 | Method | Endpoint | Description | Status Codes |
 | --- | --- | --- | --- |
@@ -147,3 +147,12 @@ Vite will launch your application live at `http://localhost:5173`. Open this URL
 | **POST** | `/api/tasks` | Create a new task (validates required title & description fields) | `201 Created`, `400 Bad Request`<br> |
 | **PUT** | `/api/tasks/:id` | Update an existing task by ID | `200 OK`, `404 Not Found`<br> |
 | **DELETE** | `/api/tasks/:id` | Delete a task by ID | `200 OK`, `404 Not Found`<br> |
+
+### Postman Collection Testing
+For quick API verification, a fully configured **Postman Collection** has been included in the root directory under the filename **`postman_collection.json`**. 
+
+**How to use it:**
+1. Open **Postman**.
+2. Click the **Import** button in the top left.
+3. Drag and drop or upload the `postman_collection.json` file from your project root.
+4. Test all endpoints instantly against your running backend at `http://localhost:5000/api/tasks`[cite: 1].
