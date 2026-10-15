@@ -6,7 +6,7 @@ The goal of this project was to build a sleek, modern, and robust task dashboard
 
 ---
 
-## ✨ Core Functionality & Features
+##  Core Functionality & Features
 
 * **Complete CRUD Operations:** Create, read, update, and delete tasks seamlessly with instant UI feedback.
 * **Smart Filtering & Sorting:** Filter tasks dynamically by status (`pending`, `in_progress`, `completed`) or priority (`low`, `medium`, `high`), and sort them by creation date, due date, or priority level.
