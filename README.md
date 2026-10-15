@@ -155,4 +155,58 @@ For quick API verification, a fully configured **Postman Collection** has been i
 1. Open **Postman**.
 2. Click the **Import** button in the top left.
 3. Drag and drop or upload the `postman_collection.json` file from your project root.
-4. Test all endpoints instantly against your running backend at `http://localhost:5000/api/tasks`[cite: 1].
+4. Test all endpoints instantly against your running backend at `http://localhost:5000/api/tasks`.
+
+## Application Preview & Visual Walkthrough
+
+Here is a visual breakdown of TaskFlow Manager's user interface, responsive controls, and state handlings:
+
+* **Intuitive Light Theme Dashboard:** The clean, SaaS-grade primary interface featuring the top navigation bar, filter toolbar, and responsive task cards.
+  *(Placeholder: `![Light Theme Dashboard](<img width="1917" height="857" alt="Screenshot 2026-10-15 225259" src="https://github.com/user-attachments/assets/11d751b7-8e1f-4c31-bbef-81467423206c" />
+`)*
+
+* **Sleek Dark Mode Theme:** Seamless theme switching utilizing Tailwind CSS dark variants to reduce eye strain in low-light environments.
+  *(Placeholder: `![Dark Theme Dashboard](<img width="1917" height="796" alt="Screenshot 2026-10-15 225313" src="https://github.com/user-attachments/assets/0ee1f818-38f0-4b7f-9235-f94d3b256171" />
+)`)*
+
+* **Comprehensive Task Overview Modal:** Detailed view displaying complete task metadata, including exact creation timestamps and last updated logs.
+  *(Placeholder: `![Task Details Modal](<img width="1917" height="825" alt="Screenshot 2026-10-15 225330" src="https://github.com/user-attachments/assets/58166387-7d29-4299-a4e0-ada980f8fcd9" />
+)`)*
+
+* **Interactive Task Editing Modal:** Seamlessly modify existing task fields, update statuses, or adjust priorities through the pre-populated form.
+  *(Placeholder: `![Edit Task Modal](<img width="1917" height="868" alt="Screenshot 2026-10-15 225347" src="https://github.com/user-attachments/assets/e05c59f3-b0e4-45ce-8336-0f6a3ea8b6b5" />
+)`)*
+
+* **Deletion Flow & Confirmation:** Clean confirmation dialog protecting against accidental task removals.
+  *(Placeholder: `![Delete Confirmation](<img width="1917" height="872" alt="Screenshot 2026-10-15 230915" src="https://github.com/user-attachments/assets/1a35de89-e932-483a-864d-6ccb26f3381d" /> <img width="1917" height="697" alt="Screenshot 2026-10-15 230924" src="https://github.com/user-attachments/assets/d0e603da-ede0-41e7-957c-e94490bc61c9" />
+
+)`)*
+
+* **New Task Creation Form:** Interactive creation modal featuring real-time client-side input validation for required title and description fields.
+  *(Placeholder: `![Create Task Modal](<img width="1917" height="880" alt="Screenshot 2026-10-15 225440" src="https://github.com/user-attachments/assets/84f12b7f-e672-45d1-9f88-8e0cbe81cf2c" />
+)`)*
+
+* **Advanced Filter & Sort Toolbar:** Robust control center supporting multi-parameter queries:
+  * **Status Filtering:** Filter instantly by *Pending*, *In Progress*, or *Completed*.
+    
+    <img width="627" height="471" alt="Status Filter View" src="https://github.com/user-attachments/assets/0ea6460a-16c4-46af-ae2a-0df3fbf9949d" />
+
+  * **Priority Filtering:** Isolate tasks by *Low*, *Medium*, or *High* priority levels.
+ 
+    <img width="655" height="460" alt="Sorting Options View" src="https://github.com/user-attachments/assets/a974c21e-40bb-4680-8b12-c89a751f54be" />
+
+  * **Dynamic Sorting:** Sort datasets effortlessly by *Created Date*, *Due Date*, or *Priority Level*.
+    
+     <img width="516" height="340" alt="Priority Filter View" src="https://github.com/user-attachments/assets/25d6486e-3682-4aff-8a3b-4e21832deb08" />
+
+* **Targeted Filter Match State:** Clean grid isolation when filters match specific criteria (e.g., viewing pending tasks under universal priority scopes).
+  *(Placeholder: `![Filtered Results Match](<img width="1917" height="652" alt="Screenshot 2026-10-15 225527" src="https://github.com/user-attachments/assets/185b7595-9c68-4855-88f7-2bef7b364082" />
+)`)*
+
+* **Empty State Handling:** Graceful placeholder UI displayed when search queries or filters yield zero matching records.
+  *(Placeholder: `![Empty State Screen](<img width="1911" height="802" alt="Screenshot 2026-10-15 225541" src="https://github.com/user-attachments/assets/c86ede80-8566-44d8-a675-1dbd47e1dfbf" />
+)`)*
+
+* **Backend Error & Server-Down State:** Robust error boundary presentation featuring alert messaging and an integrated **Retry** action button if the API server goes offline.
+  *(Placeholder: `![Server Error State](<img width="1917" height="832" alt="Screenshot 2026-10-15 225618" src="https://github.com/user-attachments/assets/63ec5d79-8b2f-4880-90c7-f15fa35e7f31" />
+)`)*
