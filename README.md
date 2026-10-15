@@ -161,52 +161,54 @@ For quick API verification, a fully configured **Postman Collection** has been i
 
 Here is a visual breakdown of TaskFlow Manager's user interface, responsive controls, and state handlings:
 
-* **Intuitive Light Theme Dashboard:** The clean, SaaS-grade primary interface featuring the top navigation bar, filter toolbar, and responsive task cards.
-  *(Placeholder: `![Light Theme Dashboard](<img width="1917" height="857" alt="Screenshot 2026-10-15 225259" src="https://github.com/user-attachments/assets/11d751b7-8e1f-4c31-bbef-81467423206c" />
-`)*
+- **Intuitive Light Theme Dashboard:** The clean, SaaS-grade primary interface featuring the top navigation bar, filter toolbar, and responsive task cards.
+  
+  <img width="1917" height="857" alt="Light Theme Dashboard" src="https://github.com/user-attachments/assets/11d751b7-8e1f-4c31-bbef-81467423206c" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
 
-* **Sleek Dark Mode Theme:** Seamless theme switching utilizing Tailwind CSS dark variants to reduce eye strain in low-light environments.
-  *(Placeholder: `![Dark Theme Dashboard](<img width="1917" height="796" alt="Screenshot 2026-10-15 225313" src="https://github.com/user-attachments/assets/0ee1f818-38f0-4b7f-9235-f94d3b256171" />
-)`)*
+- **Sleek Dark Mode Theme:** Seamless theme switching utilizing Tailwind CSS dark variants to reduce eye strain in low-light environments.
+  
+  <img width="1917" height="796" alt="Dark Theme Dashboard" src="https://github.com/user-attachments/assets/0ee1f818-38f0-4b7f-9235-f94d3b256171" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
 
-* **Comprehensive Task Overview Modal:** Detailed view displaying complete task metadata, including exact creation timestamps and last updated logs.
-  *(Placeholder: `![Task Details Modal](<img width="1917" height="825" alt="Screenshot 2026-10-15 225330" src="https://github.com/user-attachments/assets/58166387-7d29-4299-a4e0-ada980f8fcd9" />
-)`)*
+- **Comprehensive Task Overview Modal:** Detailed view displaying complete task metadata, including exact creation timestamps and last updated logs.
+  
+  <img width="1917" height="825" alt="Task Details Modal" src="https://github.com/user-attachments/assets/58166387-7d29-4299-a4e0-ada980f8fcd9" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
 
-* **Interactive Task Editing Modal:** Seamlessly modify existing task fields, update statuses, or adjust priorities through the pre-populated form.
-  *(Placeholder: `![Edit Task Modal](<img width="1917" height="868" alt="Screenshot 2026-10-15 225347" src="https://github.com/user-attachments/assets/e05c59f3-b0e4-45ce-8336-0f6a3ea8b6b5" />
-)`)*
+- **Interactive Task Editing Modal:** Seamlessly modify existing task fields, update statuses, or adjust priorities through the pre-populated form.
+  
+  <img width="1917" height="868" alt="Edit Task Modal" src="https://github.com/user-attachments/assets/e05c59f3-b0e4-45ce-8336-0f6a3ea8b6b5" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
 
-* **Deletion Flow & Confirmation:** Clean confirmation dialog protecting against accidental task removals.
-  *(Placeholder: `![Delete Confirmation](<img width="1917" height="872" alt="Screenshot 2026-10-15 230915" src="https://github.com/user-attachments/assets/1a35de89-e932-483a-864d-6ccb26f3381d" /> <img width="1917" height="697" alt="Screenshot 2026-10-15 230924" src="https://github.com/user-attachments/assets/d0e603da-ede0-41e7-957c-e94490bc61c9" />
+- **Deletion Flow & Confirmation:** Clean confirmation dialog protecting against accidental task removals.
+  
+  <div class="flex flex-col gap-4">
+    <img width="1917" height="872" alt="Delete Confirmation Step 1" src="https://github.com/user-attachments/assets/1a35de89-e932-483a-864d-6ccb26f3381d" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
+    <img width="1917" height="697" alt="Delete Confirmation Step 2" src="https://github.com/user-attachments/assets/d0e603da-ede0-41e7-957c-e94490bc61c9" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
+  </div>
 
-)`)*
+- **New Task Creation Form:** Interactive creation modal featuring real-time client-side input validation for required title and description fields.
+  
+  <img width="1917" height="880" alt="Create Task Modal" src="https://github.com/user-attachments/assets/84f12b7f-e672-45d1-9f88-8e0cbe81cf2c" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
 
-* **New Task Creation Form:** Interactive creation modal featuring real-time client-side input validation for required title and description fields.
-  *(Placeholder: `![Create Task Modal](<img width="1917" height="880" alt="Screenshot 2026-10-15 225440" src="https://github.com/user-attachments/assets/84f12b7f-e672-45d1-9f88-8e0cbe81cf2c" />
-)`)*
-
-* **Advanced Filter & Sort Toolbar:** Robust control center supporting multi-parameter queries:
+- **Advanced Filter & Sort Toolbar:** Robust control center supporting multi-parameter queries:
   * **Status Filtering:** Filter instantly by *Pending*, *In Progress*, or *Completed*.
     
-    <img width="627" height="471" alt="Status Filter View" src="https://github.com/user-attachments/assets/0ea6460a-16c4-46af-ae2a-0df3fbf9949d" />
+    <img width="627" height="471" alt="Status Filter View" src="https://github.com/user-attachments/assets/0ea6460a-16c4-46af-ae2a-0df3fbf9949d" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
 
   * **Priority Filtering:** Isolate tasks by *Low*, *Medium*, or *High* priority levels.
- 
-    <img width="655" height="460" alt="Sorting Options View" src="https://github.com/user-attachments/assets/a974c21e-40bb-4680-8b12-c89a751f54be" />
+  
+    <img width="655" height="460" alt="Priority Filter View" src="https://github.com/user-attachments/assets/a974c21e-40bb-4680-8b12-c89a751f54be" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
 
   * **Dynamic Sorting:** Sort datasets effortlessly by *Created Date*, *Due Date*, or *Priority Level*.
     
-     <img width="516" height="340" alt="Priority Filter View" src="https://github.com/user-attachments/assets/25d6486e-3682-4aff-8a3b-4e21832deb08" />
+    <img width="516" height="340" alt="Sorting Options View" src="https://github.com/user-attachments/assets/25d6486e-3682-4aff-8a3b-4e21832deb08" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
 
-* **Targeted Filter Match State:** Clean grid isolation when filters match specific criteria (e.g., viewing pending tasks under universal priority scopes).
-  *(Placeholder: `![Filtered Results Match](<img width="1917" height="652" alt="Screenshot 2026-10-15 225527" src="https://github.com/user-attachments/assets/185b7595-9c68-4855-88f7-2bef7b364082" />
-)`)*
+- **Targeted Filter Match State:** Clean grid isolation when filters match specific criteria (e.g., viewing pending tasks under universal priority scopes).
+  
+  <img width="1917" height="652" alt="Filtered Results Match" src="https://github.com/user-attachments/assets/185b7595-9c68-4855-88f7-2bef7b364082" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
 
-* **Empty State Handling:** Graceful placeholder UI displayed when search queries or filters yield zero matching records.
-  *(Placeholder: `![Empty State Screen](<img width="1911" height="802" alt="Screenshot 2026-10-15 225541" src="https://github.com/user-attachments/assets/c86ede80-8566-44d8-a675-1dbd47e1dfbf" />
-)`)*
+- **Empty State Handling:** Graceful placeholder UI displayed when search queries or filters yield zero matching records.
+  
+  <img width="1911" height="802" alt="Empty State Screen" src="https://github.com/user-attachments/assets/c86ede80-8566-44d8-a675-1dbd47e1dfbf" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
 
-* **Backend Error & Server-Down State:** Robust error boundary presentation featuring alert messaging and an integrated **Retry** action button if the API server goes offline.
-  *(Placeholder: `![Server Error State](<img width="1917" height="832" alt="Screenshot 2026-10-15 225618" src="https://github.com/user-attachments/assets/63ec5d79-8b2f-4880-90c7-f15fa35e7f31" />
-)`)*
+- **Backend Error & Server-Down State:** Robust error boundary presentation featuring alert messaging and an integrated **Retry** action button if the API server goes offline.
+  
+  <img width="1917" height="832" alt="Server Error State" src="https://github.com/user-attachments/assets/63ec5d79-8b2f-4880-90c7-f15fa35e7f31" class="border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm" />
